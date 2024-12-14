@@ -7,13 +7,17 @@ from app.models.option.detail import DetailLevel
 from app.models.option.terminology import Terminology
 
 
-class LearningRequest(BaseModel):
+class DocumentsReg(BaseModel):
     topic: str
     keywords: List[str]
     terminology: Terminology
     depth: Depth
     detail_level: DetailLevel
     
+class LearningRequest(BaseModel):
+    learning_request: DocumentsReg
+    mind_map: MindMap
+    
 class GuideBookRequest(BaseModel):
-    learning_request: LearningRequest
+    learning_request: DocumentsReg
     mind_map: MindMap

@@ -5,7 +5,7 @@ from app.utils.context import conversation_interactions_as_context
 
 def summary_prompt(conversation_interactions: List[InteractionResponse]) -> str:
     return f"""
-You are a specialized in analyzing a conversation and reporting key insights about it.
+You are agent specialized in analyzing a conversation and reporting key insights about it.
 
 CONVERSATION INTERACTIONS:
 {conversation_interactions_as_context(conversation_interactions)}

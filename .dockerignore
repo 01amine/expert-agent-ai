@@ -1,6 +1,0 @@
-.venv/
-package.egg-info/
-__pycache__/
-test.*
-media/*.wav
-.DS_Store

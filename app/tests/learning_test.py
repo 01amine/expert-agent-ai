@@ -4,14 +4,14 @@ from app.services.learning_service import create_mind_map, create_guide_book
 from app.utils.record import save_mind_map, save_guide_book
 
 request = LearningRequest(
-    topic="Productivity",
-    keywords=["Time Management", "Goal Setting", "Habit Building", "Deep Work", "Focus"],
-    terminology=Terminology.general,
+    topic="Documents",
+    keywords=["Documents", "Documents Regulations", "Required Documents", "Paper Work", "Federation Documents"],
+    terminology=Terminology.technical,
     depth=Depth.deep,
     detail_level=DetailLevel.detailed
 )
 
-title = "productivity"
+title = "Documents"
 
 mind_map = create_mind_map(request)
 save_mind_map(mind_map, title)

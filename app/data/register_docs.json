@@ -1,0 +1,27 @@
+{
+    "natural_person": {
+      "required_documents": [
+        "Application form",
+        "Ownership deed or lease agreement",
+        "Birth certificate extract",
+        "Judicial record extract",
+        "Stamp duty receipt (4,000 DA)",
+        "Registration fee receipt",
+        "Approval or license (if applicable)"
+      ]
+    },
+    "legal_entity": {
+      "required_documents": [
+        "Application form",
+        "Ownership deed or lease agreement (company name)",
+        "Articles of association (2 copies)",
+        "Publication of articles of association",
+        "Birth certificate and judicial record extract for managers and directors",
+        "Stamp duty receipt (4,000 DA)",
+        "Registration fee receipt",
+        "Approval or license (if applicable)"
+      ]
+    }
+  }
+
+  

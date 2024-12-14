@@ -3,7 +3,6 @@ import uuid
 import json
 from app.models.agent.agent import Agent
 from app.models.conversation.conversation import Conversation
-from app.models.podcast.podcast import DualPodcast
 from app.models.learning.mind_map import MindMap
 from app.models.interaction.interaction import Interaction, InteractionResponse
 from app.utils.conversation import get_interaction_response
@@ -43,7 +42,7 @@ def load_agents(conversation_title: str) -> list[Agent]:
     return [Agent(**agent) for agent in agents_record]
 
 def load_conversation_interactions(conversation_title: str) -> str:
-    json_file = f"app/data/conversations/{conversation_title}/conversation.json"
+    json_file = f"app/data/conversation.json"
     with open(json_file) as f:
         interactions_record = json.load(f)
     return [InteractionResponse(**interaction) for interaction in interactions_record]

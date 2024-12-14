@@ -1,8 +1,0 @@
-.venv/
-package.egg-info/
-__pycache__/
-.env
-test.*
-service_account.json
-media/*.wav
-.DS_Store

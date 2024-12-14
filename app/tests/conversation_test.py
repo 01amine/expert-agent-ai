@@ -1,12 +1,12 @@
 from app.services.conversation_service import initialize_conversation, run_conversation
 from app.utils.record import save_conversation
 
-from app.data.conversations.brainstorming.relations import ceo, business, it, design
-from app.data.podcast.ai.agents import host, participant
+from app.data.relation import rh, docs
+from app.data import finance
 
-topic = "podcast" # "brainstorming", "podcast"
+topic = "register commerce"
 # agents = [ceo, business, it, design]
-agents = [host, participant]
+agents = [docs, rh]
 
 conversation = initialize_conversation(agents)
 run_conversation(conversation)
